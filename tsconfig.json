@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                      // Modern JS output
+    "module": "commonjs",                    // Node.js module system
+    "rootDir": "./src",                      // Where TypeScript source files live
+    "outDir": "./dist",                      // Compiled output
+    "esModuleInterop": true,                 // Required for Express, bcrypt, etc.
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                          // Enable all strict type checks
+    "skipLibCheck": true,                    // Skip .d.ts checking
+    "typeRoots": ["./node_modules/@types", "./src/types"], // Custom types (e.g., RequestWithUser)
+    "resolveJsonModule": true,               // If you import JSON files
+    "moduleResolution": "node",              // Node module resolution
+    "allowSyntheticDefaultImports": true     // Allow default imports from CJS modules
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
